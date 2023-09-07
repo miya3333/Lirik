@@ -97,7 +97,16 @@ a {
 /* .container */
 
 /* responsive mobile phone: iphone 12 pro */
-@media screen and (min-width: 600px) {
-  
+@media screen and (max-width: 600px) {
+  .nav {
+    height: 170px;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+  .judul {
+    height: 10px;
+    font-size: 12px;
+  }
 }
 /* responsive mobile phone: iphone 12 pro */
