@@ -1,0 +1,103 @@
+/* .nav */
+/* edit thumb bar */
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+/* edit thumb bar */
+
+/* a */
+a {
+  text-decoration: none;
+  color: black;
+}
+/* a */
+
+/* .container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.nav {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: chartreuse; */
+}
+.title {
+  height: 20%;
+  /* background-color: aqua; */
+  font-size: 2rem;
+}
+.judul-lagu {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: auto;
+  /* background-color: blueviolet; */
+}
+.judul {
+  width: max-content;
+  height: 20px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: brown;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.judul:hover {
+  background-color: coral;
+}
+/* .nav */
+
+/* .content */
+.content {
+    width: 100%;
+    height: 800px;
+    background-color: crimson;
+}
+/* .content */
+/* .container */
+
+/* responsive mobile phone: iphone 12 pro */
+@media screen and (min-width: 600px) {
+  
+}
+/* responsive mobile phone: iphone 12 pro */
