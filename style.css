@@ -1,3 +1,49 @@
+/* font by google */
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&display=swap');
+/* font by google */
+
+/* root */
+:root {
+  --body-font-andika: 'Andika', sans-serif;
+  --body-font-jet: 'JetBrains Mono', monospace;
+  --body-font-sand: 'Quicksand', sans-serif;
+
+  --color-1: #577D86;
+  --color-2: #569DAA;
+  --color-3: #87CBB9;
+  --color-4: #B9EDDD;
+
+  --color-5: #F3AA60;
+  --color-6: #EF6262;
+  --color-7: #468B97;
+  --color-8: #1D5B79;
+
+}
+/* root */
+
+/* BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: fit-content;
+  font-family: var(--body-font-andika);
+  background-color: var(--color-1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* BASE */
+
 /* .nav */
 /* edit thumb bar */
 /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
@@ -14,7 +60,7 @@
 /* membuat styling pada batang atau bar scrollbar  */
 /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
 ::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: var(--color-7);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
@@ -22,16 +68,9 @@
 
 /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: red;
+  background-color: var(--color-8);
 }
 /* edit thumb bar */
-
-/* a */
-a {
-  text-decoration: none;
-  color: black;
-}
-/* a */
 
 /* .container */
 .container {
@@ -39,26 +78,27 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: cadetblue;
 }
 
 .nav {
   width: 100%;
-  height: 220px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: chartreuse; */
+  background-color: var(--color-2);
 }
 .title {
-  height: 20%;
+  width: max-content;
+  height: max-content;
   /* background-color: aqua; */
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: var(--body-font-sand);
 }
 .judul-lagu {
-  width: 90%;
-  height: 70%;
+  width: 83%;
+  height: 120px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -69,29 +109,94 @@ a {
 }
 .judul {
   width: max-content;
-  height: 20px;
+  height: 30px;
   margin: 5px;
+  font-size: 1.25rem;
+  font-family: var(--body-font-jet);
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: brown;
+  background-color: var(--color-4);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
 .judul:hover {
-  background-color: coral;
+  background-color: var(--color-3);
 }
 /* .nav */
 
 /* .content */
 .content {
-    width: 100%;
-    height: 800px;
-    background-color: crimson;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: crimson; */
+}
+.outside {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellowgreen; */
+}
+.song_title {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  /* background-color: yellow; */
+}
+.inside {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: darkviolet; */
+}
+
+.real_text,
+.romanized {
+  /* background-color: springgreen; */
+}
+
+.sub_title {
+  font-size: 1.75rem;
+  font-style: italic;
+}
+.text {
+  font-size: 1.25rem;
+}
+.sub_title,
+.text {
+  text-align: center;
+}
+
+.back_to_lyric {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-4);
+  font-size: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.icon {
+}
+.back_to_lyric:hover {
+  background-color: var(--color-3);
 }
 /* .content */
 /* .container */
