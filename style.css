@@ -302,6 +302,7 @@ a {
   .warning {
     width: 100%;
     height: max-content;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
